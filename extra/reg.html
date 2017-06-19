@@ -1,0 +1,60 @@
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/textt.css">
+    </head>
+    <body>
+    <style>
+body{
+  background-image:url(images/img-1.jpg);
+ 
+}
+.star{
+  color:red;
+}
+
+</style>
+
+      <form action="nregg.php" method="post">
+      
+        <h1>Registration Form !</h1>
+        
+        <fieldset>
+          <legend><span class="number">1</span>Your basic information</legend>
+          <label for="rollno">Rollno:</label>
+          <input type="text" id="name" name="rollno"><br>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+          <label for="rollno">Password:</label>
+          <input type="password" id="name" name="password">
+          <label for="cpassword1">Confirm Password:</label>
+          <input type="password" id="cpassword1" name="cpassword1">
+          <label for="contact">Contact:</label>
+          <input type="text" id="contact" name="contact">
+          <label for="name">Email:</label>
+          <input type="email" id="email" name="email">
+          <label for="hostel">Hostel:</label>
+          <input type="text" id="hostel" name="hostel">
+          <label for="course">Course:</label>
+        <select id="course" name="course">
+          <optgroup label="course">
+          <option value="frontend_developer">MCA</option>
+            <option value="php_developor">M.Tech</option>
+            <option value="python_developer">M.Sc</option>
+            <option value="rails_developer">Ph.D</option>
+            <option value="web_designer">B.Tech</option>
+            <option value="web_designer">B.Arch</option>
+           
+        </select>
+                                       
+        </fieldset>
+        <button type="submit" name="submit">Sign Up</button>
+
+      </form>
+      
+    </body>
+</html>

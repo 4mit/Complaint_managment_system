@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=devidev-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>&copy;CMS-2017</title>
+      <link rel="stylesheet" type="text/css" href="library/font-awesome-4.3.0/css/font-awesome.min.css">
+      <link rel="shortcut icon" type="image/x-icon" href="images/icon.png">
+      <link rel="stylesheet" type="text/css" href="css/animate.css">
+      <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+      <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+      <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+      <link rel ="stylesheet" type="text/css" href="library/vegas/vegas.min.css">
+      <link rel="stylesheet" type="text/css" href="library/bootstrap/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" type="text/css" href="library/bootstrap/css/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/responsive.css">
+      <link rel="stylesheet" type="text/css" href="css/color/rose.css">
+      <link rel="stylesheet" type="text/css" href="css/modalzinha.css">     
+
+   <style>
+     .nav li{
+      transition:.4s linear; 
+      font-size:22px;
+      font-weight:bold;
+     }
+     .nav li:hover{
+      background-color: rgba(146, 174, 179, 1); 
+      
+     }
+     td{color:blue;}
+     input[type="text"]{
+      color:white;
+     }
+     td{color:blue;}
+     input[type="password"]{
+      color:white;
+     }
+     input[type="email"]{
+      color:white;
+     }
+     .modal-title{color:blue;
+      font-weight:bold;
+    }
+    .modal{border-radius:0px;}
+
+
+    textarea{
+
+      color:white !important;
+    }
+   </style>     
+</head>
+<body >
+<!-- [ LOADERs ]
+================================================================================================================================-->	
+    <div class="preloader">
+    <div class="loader theme_background_color">
+        <span></span>
+      
+    </div>
+</div>
+<!-- [ /PRELOADER ]
+=============================================================================================================================-->
+
+<div class="wrapper">
+    <nav  class=" nim-menu navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="index.html">CMS</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html" class="page-scroll">Home</a></li>
+            <li><a href="#one" class="page-scroll">About</a></li>
+             <li><a href="#four" class="page-scroll">Register</a></li>
+
+                      <div class="dropdown">
+  <button class="dropbtn"><b>Login Here</b></button>
+  <div class="dropdown-content">
+     <li><a href="#" class="page-scroll" data-toggle="modal" data-target="#myModals">Student</a></li>
+            <li><a href="#" class="page-scroll" data-toggle="modal" data-target="#myModalct">Caretaker</a></li>
+            <li><a href="#" class="page-scroll" data-toggle="modal" data-target="#myModal2">Admin </a></li>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+             <style>
+                      /* Style The Dropdown Button */
+                      .dropbtn {
+                          background-color: #000000;
+                         
+                          color: #FFFFFF;
+                          padding: 12px;
+                          font-size: 17px;
+                          border: none;
+                          cursor: pointer;
+                      }
+
+                      /* The container <div> - needed to position the dropdown content */
+                      .dropdown {
+                          position: relative;
+                          display: inline-block;
+
+                      }
+
+                      /* Dropdown Content (Hidden by Default) */
+                      .dropdown-content {
+                          display: none;
+                          position: absolute;
+                          background-color: #f9f9f9;
+                          min-width: 120px;
+                          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                          z-index: 1;
+
+
+                      }
+
+                      /* Links inside the dropdown */
+                      .dropdown-content a {
+                          color: black;
+                          padding: 12px 16px;
+                          text-decoration: none;
+                          display: block;
+                          font-size: 17px;
+                      }
+
+                      /* Change color of dropdown links on hover */
+                      .dropdown-content a:hover {background-color: #f1f1f1}
+
+                      /* Show the dropdown menu on hover */
+                      .dropdown:hover .dropdown-content {
+                          display: block;
+                      }
+
+                      /* Change the background color of the dropdown button when the dropdown content is shown */
+                      .dropdown:hover .dropbtn {
+                          background-color: #97B7B8;
+                      }
+                      </style>
+
+
+            <li><a href="trrack.html" class="page-scroll">Track Status</a></li>
+            <!--<li><a href="#" class="page-scroll">Track Status</a></li>-->
+            <li><a href="#six" class="page-scroll">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+<div class="container" id="pop_the_form">  
+  <div class="container">
+    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+      <fieldset>
+          <legend>Admin Login</legend>
+          <div class="form-group">
+            <label class="col-md-4 control-label"></label>  
+            <div class="col-md-4 inputGroupContainer">
+            	<div class="input-group">
+		            <span class="input-group-addon">Enter Email </span>
+		            <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+              </div>
+            </div>
+          </div>
+
+          <!-- Text input-->
+           <div class="form-group">
+            <label class="col-md-4 control-label"></label>  
+              <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                  <span class="input-group-addon">Enter Password</span>
+            <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <label class="col-md-4 control-label"></label>
+            <div class="col-md-4">
+              <button type="submit" class="btn btn-warning" >Proceed<span class="glyphicon glyphicon-send"></span></button>
+            </div>
+          </div>
+      </fieldset>
+    </form>
+  </div>
+</div><!-- /.container -->
+
+   <section class="main-heading" id="home">
+       <div class="overlay">
+           <div class="container">
+               <div class="row">
+                   <div class="main-heading-content col-md-12 col-sm-12 text-center">
+        <h1 class="main-heading-title">NITC E-complaint managment System</h1>
+        
+          <a href="#" class="btn btn-custom theme_background_color">Get Started</a>
+          <a href="#" class="btn btn-custom-outline">Contact Us</a>
+        </div>
+      </div>
+               </div>
+           </div>
+       </div>     
+   </section>
+ 
+ <section class="aboutus white-background black" id="one">
+     <div class="container">
+         <div class="row">
+             <div class="col-md-12 text-center black">
+                 <h3 class="title">ABOUT <span class="themecolor">Project</span></h3>
+            <p class="a-slog">We maintain and manages all the complaint </p> 
+            <p>The NITC-E-Complaint Management System is an interactive solution for solving the complaints online which saves lots of time for students.</p>
+             </div>
+         </div>
+         <!--<div class="gap">
+             
+         </div>-->
+        <!-- 
+         <div class="row about-box">
+          <div class="col-sm-4 text-center">
+            <div class="margin-bottom">
+              <i class="fa fa-newspaper-o"></i>
+              <h4>POWER OF STUDENT</h4>
+              <p class="black">
+                <ul class="list-unstyled">
+                    <li>POWER 1</li>
+                    <li>POWER 2</li>
+                    <li>POWER 3</li>
+                    <li>POWER 4</li>
+                    <li>POWER 5</li>
+
+                </ul>
+              </p>
+            </div> <!-- / margin -->
+        <!--  </div> <!-- /col -->
+         <!--  <div class="col-sm-4 about-line text-center">
+            <div class="margin-bottom">
+              <i class="fa fa-diamond"></i>
+              <h4>FULLY RESPONSIVE AND QUICK ACtiON</h4>
+              <p class="black">
+                <ul class="list-unstyled">
+                    <li>POWER 1</li>
+                    <li>POWER 2</li>
+                    <li>POWER 3</li>
+                    <li>POWER 4</li>
+                    <li>POWER 5</li>
+
+                </ul>
+
+              </p>
+            </div> <!-- / margin -->
+          </div><!-- /col -->
+         <!-- <div class="col-sm-4 text-center">
+            <div class="margin-bottom">
+              <i class="fa fa-area-chart"></i>
+              <h4>FULLY FRIENDLY</h4>
+              <p class="black">
+                <ul class="list-unstyled">
+                    <li>POWER 1</li>
+                    <li>POWER 2</li>
+                    <li>POWER 3</li>
+                    <li>POWER 4</li>
+                    <li>POWER 5</li>
+
+                </ul> -->
+
+              </p>
+            </div> <!-- / margin -->
+          </div><!-- /col -->
+        </div> <!-- /row -->
+     </div>
+ </section>
+         
+         
+
+<!--old try-->
+<section class="inspiration" id="four">
+     <div class="overlay">
+        
+             
+                </article>
+                <div class="col col-md-12" id="r_form">
+                      <!-- feedback Form -->                        
+                       <!-- <form class="form-horizontal" role="form" id="feedback_form" action="feedback.php" method="post">-->
+                       <form class="form-horizontal" role="form"  action="register.php" method="post">
+                            <br/><br><br>
+                            <h2 align="center">Registration form !!</h2>
+                            <br/>
+
+                            <div class="form-group">
+                                <label for="firstName" class="col-sm-3 control-label">Roll Number:</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="rollno"  class="form-control" pattern="[a-zA-Z][0-9][0-9][0-9][0-9][0-9][0-9][a-zA-Z]{2}" autofocus required>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="firstName" class="col-sm-3 control-label">Name:</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="name"  class="form-control" required>
+                                    
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="col-sm-3 control-label">Password:</label>
+                                <div class="col-sm-6">
+                                    <input type="password" name="password"  class="form-control" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="country" class="col-sm-3 control-label">Confirm Password:</label>
+                                <div class="col-sm-6">
+                                    <input type="password" class="form-control" name="cpassword" required>    
+                                </div>
+                            </div> <!-- /.form-group -->
+                             <div class="form-group">
+                                <label for="country" class="col-sm-3 control-label">Contact:</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" name="contact" required>    
+                                </div>
+                            </div>
+                             <div class="form-group">
+                                <label for="country" class="col-sm-3 control-label">NITC Email:</label>
+                                <div class="col-sm-6">
+                                    <input type="email" class="form-control" name="email" pattern="\S+@nitc.ac.in" required>    
+                                </div>
+                            </div>
+                             <div class="form-group">
+                                <label for="country" class="col-sm-3 control-label">Hostel:</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" name="hostel" required>    
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="country" class="col-sm-3 control-label">Course:</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" name="course" required>    
+                                </div>
+                            </div>
+                            
+                          
+                                                  
+                            <div class="form-group">
+                                <div class="col-sm-6 col-sm-offset-3">
+                                  <h3 id="error" align="center"></h3>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-6 col-sm-offset-3">
+                                    <button type="submit"   class="btn btn-primary btn-block">Register Here</button>
+                                </div>
+                            </div>
+                        </form> <!-- /form -->
+                        <!-- feedback Form ends here -->
+                    </div>
+             </div>
+         </div>
+     </div>
+ </section>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+  <!--sub-form-->
+<section class="sub-form text-center" id="eight">
+  <div class="container">
+    <div class="col-md-12">
+        
+ 
+           </div> 
+
+   <!-- <div class="row">
+        <div class="col-md-3 col-sm-3"></div>
+      <div class="col-md-6 center-block col-sm-6 ">
+        <form id="mc-form">
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Email Address" required id="mc-email">
+            <span class="input-group-btn">
+            <button type="submit" class="btn btn-default">SUBSCRIBE <i class="fa fa-envelope"></i> </button>
+            </span> </div>
+          <label for="mc-email" id="mc-notification"></label>
+        </form>
+      </div>
+    </div>-->
+  </div>
+</section>
+<!--sub-form end--> 
+<section class="client-testimonial text-center white" id="five">
+  
+            <div class="container">
+                <div class="row">
+                <div class="col-md-12">
+                    <h3 class="title">Student Testimonials</h3>            
+    </div> 
+          
+          <div class="col-md-8 col-md-offset-2 grey">
+                  <div id="testimonial" class="owl-carousel owl-theme" style="color:white;">
+                      <div class="item">
+                          <h5>It was a great time we spent in NITC. NITC has very wonderful faculty and they are very cooperative and campus environment is very positive. Training and placement department continuously providing assistance regarding the placement. NITC has made the best efforts to provide all the facilities </h5>
+                          <p><strong>Amit Kumar </strong>, MCA 2<sup>nd</sup>Year.</p>
+                      </div>
+
+                      <div class="item">
+                          <h5>Building my career in NITC enriched my life. I can somehow see that my future is totally reliant on the career for which I am grateful to every faculty member of CSED Department.</h5>
+                          <p><strong>Mayank  </strong>, MCA 3<sup>rd</sup>Year..</p>
+                      </div>
+
+                      <div class="item">
+                          <h5>NITC is the best college across the india and is known for its excellence . It has all the best facilities under one roof - state of infrastructure , erudite faculty , professional teachers , well stocked libraries , good computer labs , sports area , and studios with all requirements. I am very grateful to be a part of this College. </h5>
+                          <p><strong>Lavkush </strong>, MCA 2<sup>nd</sup>Year..</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    </div>    
+ </section> 
+  <!--sub-form-->
+<section class="sub-form text-center" id="six">
+  <div class="container">
+    <div class="col-md-12">
+        <h3 class="title"><b>Contact to Complaint System </h3>
+        <p>National Institute of Technology Calicut
+				NIT Campus P.O,Calicut,
+				Kerala, India, Pin - 673601</b></p>
+
+ 
+           </div> 
+   <!-- <div class="row">
+        <div class="col-md-3 col-sm-3"></div>
+      <div class="col-md-6 center-block col-sm-6 ">
+        <form id="mc-form">
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Email Address" required id="mc-email">
+            <span class="input-group-btn">
+            <button type="submit" class="btn btn-default">SUBSCRIBE <i class="fa fa-envelope"></i> </button>
+            </span> </div>
+          <label for="mc-email" id="mc-notification"></label>
+        </form>
+      </div>
+    </div>-->
+  </div>
+</section>
+<!--sub-form end--> 
+ 
+<footer class="site-footer section-spacing text-center " id="eight">   
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <p class="footer-links"><a href="#">Terms of Use</a> <a href="#">Privacy Policy</a></p>
+      </div>
+      <div class="col-md-4"> <small>&copy; 2017 CMS. All rights reserved.</small></div>
+      <div class="col-md-4"> 
+        <!--social-->
+        
+        <ul class="social">
+          <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter "></i></a></li>
+          <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+        </ul> 
+        <!--social end--> 
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<!-- login modal-->
+<div class="modal fade" id="myModal2" role="dialog">
+      <div class="modal-dialog">    
+        <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" align="center">Admin Login Here</h4>
+        </div>
+        <div class="modal-body">
+
+           	<form action="admin/login.php" method="POST" > 
+           	 	<table class="table">            	  
+                    <tr>
+                      <td>USERNAME:</td>
+                      <td><input class="form-control" type="text" name="email"   size="30"></td>
+                    </tr>
+                    <tr>
+                      <td >PASSWORD:</td>
+                      <td><input class="form-control" type="password" name="passwd"  size="30"></td>
+                    </tr>
+                     <tr>
+                      <td ></td>
+                      <td><button type="submit" class="btn btn-danger"  name="admin_login" >Login Now</button></td>
+                    </tr>
+
+                    <tr><h5 class="h5 center" id="show_error_here"></h5></tr>        
+              </table>
+              </form>
+        </div>
+        </div>
+    </div>
+</div> 
+
+
+  <!-- Modal content-->
+
+<div class="modal fade" id="myModals" role="dialog">
+      <div class="modal-dialog">
+
+      
+        <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" align="center"> Student Login Here </h4>
+        </div>
+        <div class="modal-body">
+        <form action="student/login.php" method="POST" > 
+
+            <table class="table">
+              
+                    <tr>
+                      <td>ROLL NO:</td>
+                      <td><input class="form-control" type="text" name="rollno" id="roll"   size="30" required></td>
+                    </tr>
+                    <tr>
+                      <td >PASSWORD:</td>
+                      <td><input class="form-control" type="password" name="password"  size="30" required></td>
+                    </tr>
+                     
+                    <tr>
+                      <td></td>
+                      <td>
+                        <a href="student_forget_pass.html">Forget Password</a> <br/>
+                        <button class="btn btn-success" type="submit" name="student_login">Login Now</button><br>
+                      </td>
+                    </tr>
+                    
+                    <tr><h5 class="h5 center" id="show_error_here"></h5></tr>        
+
+
+
+                    
+                  <!-- <tr>
+                      <td></td>
+                      <td>
+                       <a href="student_forget.html">Forget Password</a> <br/>
+                       <td><button type="submit" class="btn btn-danger"  name="student_login" >Login Now</button></td>
+                      </td>
+                    </tr>
+                    
+                    <tr><h5 class="h5 center" id="show_error_here"></h5></tr>   -->     
+              </table>
+              </form>
+        </div>
+        </div>
+    </div>
+</div> 
+
+
+<!-- caretaker login modal-->
+<div class="modal fade" id="myModalct" role="dialog">
+      <div class="modal-dialog">    
+        <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" align="center">Caretaker Login Here</h4>
+        </div>
+        <div class="modal-body">
+
+            <form action="caretaker/login.php" method="POST" > 
+              <table class="table">               
+                    <tr>
+                      <td>USERNAME:</td>
+                      <td><input class="form-control" type="text" name="email"   size="30" required=""></td>
+                    </tr>
+                    <tr>
+                      <td >PASSWORD:</td>
+                      <td><input class="form-control" type="password" name="password"  size="30" required=""></td>
+                    </tr>
+                     <tr>
+                      <td></td>
+                      <td>
+                        <a href="caretaker_forget_pass.html">Forget Password</a> <br/>
+                      <button type="submit" class="btn btn-danger"  name="caretaker_login" >Login Now</button></td>
+                    </tr>
+
+                    <tr><h5 class="h5 center" id="show_error_here"></h5></tr>        
+              </table>
+              </form>
+        </div>
+        </div>
+    </div>
+</div> 
+
+
+<!-- Login modal Ends here-->
+	<!-- [ DEFAULT SCRIPT ] -->
+  <script src="library/jquery-1.11.3.min.js"></script>
+  <script src="js/calls.js"></script>
+  <script src="modalzinha.js"></script>
+	<script src="library/modernizr.custom.97074.js"></script>
+  <script src="library/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>	
+	<!-- [ PLUGIN SCRIPT ] -->
+        <script src="js/popup.js"></script>
+      	<script src="js/plugins.js"></script>
+        <!-- [ TYPING SCRIPT ] -->
+         <script src="js/typed.js"></script>
+         <!-- [ COUNT SCRIPT ] -->
+         <script src="js/fappear.js"></script>
+       <script src="js/jquery.countTo.js"></script>
+	<!-- [ SLIDER SCRIPT ] -->  
+        <script src="js/owl.carousel.js"></script>
+         <script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/SmoothScroll.js"></script>
+        
+        <!-- [ COMMON SCRIPT ] -->
+          <script src="library/vegas/vegas.min.js"></script>
+	<script src="js/common.js"></script>
+  
+</body>
+<script type="text/javascript">
+
+function pop_form(){
+  $('#pop_the_form').bPopup({
+      easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 450,
+            transition: 'slideDown'
+  });
+}
+             
+
+ $(document).ready(function(){
+
+
+ 		$('#contact_form').hide();
+        $('#f_form').hide();
+        fullscreenslider();
+
+        $('#feedback').click(function(){
+          $('#f_form').show("slow");
+        });
+ });
+</script>
+
+</html>

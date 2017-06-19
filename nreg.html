@@ -1,0 +1,59 @@
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/textt.css">
+    </head>
+    <body>
+    <style>
+body{
+  background-image:url(images/img-1.jpg);
+ 
+}
+.star{
+  color:red;
+}
+
+</style>
+
+      <form action="register.php" method="post">
+      
+        <h1>Registration Form !</h1>
+        
+        <fieldset>
+          <legend><span class="number">1</span>Your basic information</legend>
+            <label for="rollno">Rollno:</label>
+          <input type="text" id="name" name="rollno" pattern="[a-zA-Z][0-9][0-9][0-9][0-9][0-9][0-9][a-zA-Z]{2}">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="rollno">Password:</label>
+          <input type="password" id="name" name="password" required>
+          <label for="cpassword">Confirm Password:</label>
+          <input type="password" id="cpassword" name="cpassword" required>
+          <label for="contact">Contact:</label>
+          <input type="text" id="contact" name="contact" required>
+          <label for="name">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="hostel">Hostel:</label>
+          <input type="text" id="hostel" name="hostel" required>
+ <label for="course">Course:</label>
+        <select id="course" name="course" required>
+          <optgroup label="course">
+          <option value="MCA">MCA</option>
+            <option value="M.Tech">M.Tech</option>
+            <option value="M.Sc">M.Sc</option>
+            <option value="Ph.D">Ph.D</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="B.Arch">B.Arch</option>
+           
+        </select>
+                                       
+        </fieldset>
+        <button type="submit">Register Now</button>
+      </form>
+      
+    </body>
+</html>

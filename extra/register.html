@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>COMPLAINT MANAGEMENT SYSTEM</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<script src="js/jquery.min.js"></script>
+<style>
+body{
+	background-image:url(images/img-1.jpg);
+	color:#F7F0F0;
+}
+.star{
+	color:red;
+}
+
+</style>
+</head>
+<body>
+
+<form class="form-horizontal" id="reg-form">
+<fieldset>
+
+<!-- Form Name -->
+<h2 align="center" style="color: white;">Registration form </h2>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="fn">First name<span class="star">*</span></label>  
+  <div class="col-md-6">
+  <input id="fn" name="fn" type="text" placeholder="first name" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="ln">Last name<span class="star">*</span></label>  
+  <div class="col-md-6">
+  <input id="ln" name="ln" type="text" placeholder="last name" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">Email<span class="star">*</span></label>  
+  <div class="col-md-6">
+  <input id="email" name="email" type="text" placeholder="email" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="add1">Address 1<span class="star">*</span></label>  
+  <div class="col-md-6">
+  <input id="add1" name="add1" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="add2">Address 2</label>  
+  <div class="col-md-6">
+  <input id="add2" name="add2" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="phone">Enter Phone<span class="star">*</span></label>  
+  <div class="col-md-6">
+  <input id="phone" name="phone" type="text" placeholder="Phone#" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<div class="form-group">
+  <h3 align="center" style="color: red;"><div id="form-content"></div></h3>
+</div>
+
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-6">
+    <button id="button" name="submit" class="btn btn-danger btn-lg">Register Now &nbsp;<span class="glyphicon glyphicon-arrow-right"></span></button>
+    <a href="index.html"  class="btn btn-info btn-lg"><span class="glyphicon glyphicon-arrow-left">&nbsp;</span>HOME</a>
+    <button type="reset"  class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-erase">&nbsp;</span>RESET</a>
+  </div>
+</div>
+
+</fieldset>
+</form>
+<script>
+$('#reg-form').submit(function(e){
+    e.preventDefault(); // Prevent Default Submission
+    $.ajax({
+		 url: 'registration/register.php',
+		 type: 'POST',
+		 data: $(this).serialize(), // it will serialize the form data
+			dataType: 'html'
+		 })
+		 .done(function(data){
+				  $('#form-content').html(data);
+				  //console.log(data);
+		})
+		.fail(function(){
+		      alert('OOps Something went Wrong ...!'); 
+		});
+});	
+</script>
+
+</body>
+</html>

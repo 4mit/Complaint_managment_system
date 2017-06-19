@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>COMPLAINT MANAGEMENT SYSTEM</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<script src="js/jquery.min.js"></script>
+<style>
+body{
+	background-image:url(images/img-1.jpg);
+	color:#F7F0F0;
+}
+.star{
+	color:red;
+}
+
+</style>
+</head>
+<body>
+
+<form class="form-horizontal" id="forget_form" action='sforget.php' method="post">
+<fieldset>
+
+<!-- Form Name -->
+<h2 align="center" style="color: white;">Recover Your Password</h2>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="rollno">Enter Your Roll no<span class="star">*</span></label>  
+  <div class="col-md-6">
+  <input id="rollno" name="rollno" type="text"  class="form-control input-md"  pattern="[a-zA-Z][0-9][0-9][0-9][0-9][0-9][0-9][a-zA-Z]{2}" required/>
+    
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-6">
+    <button id="button" name="submit" class="btn btn-danger btn-lg">Email me Password &nbsp;<span class="glyphicon glyphicon-arrow-right"></span></button>
+    <a href="index.html"  class="btn btn-info btn-lg"><span class="glyphicon glyphicon-arrow-left">&nbsp;</span>HOME</a>
+    <button type="reset"  class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-erase">&nbsp;</span>RESET</a>
+    </div>
+</div>
+
+<!-- Text input-->
+
+
+<!-- Text input-->
+
+
+</fieldset>
+</form>
+</body>
+</html>

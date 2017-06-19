@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>COMPLAINT MANAGEMENT SYSTEM</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<script src="js/jquery.min.js"></script>
+<script type="js/fpasswordvalid.js"></script>
+<style>
+body{
+  background-image:url(images/img-1.jpg);
+  color:#F7F0F0;
+}
+.star{
+  color:red;
+}
+
+</style>
+</head>
+<body>
+
+<form class="form-horizontal" id="reg-form" action='changepass.php' method="post">
+<fieldset>
+
+<!-- Form Name -->
+<h2 align="center" style="color: white;">Change Password form </h2>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Password">Enter Username<span class="star">*</span></label>  
+  <div class="col-md-6">
+  <input id="username" name="userName" type="text" class="form-control input-md" required="">
+    </div>
+  </div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Password">Enter old Password<span class="star">*</span></label>  
+  <div class="col-md-6">
+  <input id="Password" name="currentPassword" type="password" class="form-control input-md" required="">
+    
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="newPassword">Enter New Password <span class="star">*</span></label>  
+  <div class="col-md-6">
+  <input id="newPassword" name="newPassword" type="password" class="form-control input-md" size=10 required="">
+    
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="confirmPassword">Re-Enter New Password <span class="star">*</span></label>  
+  <div class="col-md-6">
+  <input id="confirmPassword" name="confirmPassword" type="password" class="form-control input-md" size=10 required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <h3 align="center" style="color: red;"><div id="form-content"></div></h3>
+</div>
+
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-6">
+    <button id="button" name="submit" class="btn btn-danger btn-lg" >Change Password &nbsp;<span class="glyphicon glyphicon-arrow-right"></span></button>
+    <a href="index.html"  class="btn btn-info btn-lg"><span class="glyphicon glyphicon-arrow-left">&nbsp;</span>HOME</a>
+    <button type="reset"  class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-erase">&nbsp;</span>RESET</a>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</body>
+</html>

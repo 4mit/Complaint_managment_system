@@ -1,0 +1,44 @@
+ <html>
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Change Your Password</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/textt.css">
+    </head>
+    <body>
+    <style>
+body{
+  background-image:url(images/img-1.jpg);
+ 
+}
+.star{
+  color:red;
+}
+
+</style>
+
+      <form action="changepassnew.php" method="post">
+      
+        <h1>Change Your Password !</h1>
+        
+        <fieldset>
+          <legend><span class="number">1</span>Your Basic Information</legend>
+            <label for="userName">Roll No:</label>
+          <input type="text" id="userName" name="userName">
+          <label for="currentPassword">Old Password:</label>
+          <input type="password" id="currentPassword" name="currentPassword">
+          <label for="newPassword">New Password:</label>
+          <input type="password" id="newPassword" name="newPassword">
+          <label for="confirmPassword">Confirm Password :</label>
+          <input type="password" id="confirmPassword" name="confirmPassword">
+                                      
+                        
+        </fieldset>
+        <button type="submit" name="submit">Change Your Password</button>
+      </form>
+      
+    </body>
+</html>

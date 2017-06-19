@@ -1,0 +1,54 @@
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Complaint Registration Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/textt.css">
+    </head>
+    <body>
+    <style>
+body{
+ // background-image:url(images/img-1.jpg);
+ 
+}
+.star{
+  color:red;
+}
+
+</style>
+
+      <form action="createcomplaintt.php" method="POST">
+      
+        <h1>Complaint Registration Form !</h1>
+        
+        <fieldset>
+          <legend><span class="number">1</span>Complaint Information</legend>
+           <!-- <label for="rollno">Student ID:</label>
+          <input type="text" id="sid" name="sid" pattern="[a-zA-Z][0-9][0-9][0-9][0-9][0-9][0-9][a-zA-Z]{2}" required="">-->
+          <label for="Cby">Name:</label>
+          <input type="text" id="Cby" name="Cby" required="">
+          <label for="name">Email:</label>
+          <input type="email" id="email" name="email" required="">
+          
+          <label for="type">Complaint Type:</label>
+           <select id="type" name="type" required="">
+          
+          <option value="Hostel">Hostel</option>
+            <option value="Mess">Mess</option>
+            <option value="Acedemic">Acedemics</option>
+            <option value="Others">Others</option>
+        </select>
+                                  
+          <!--<input type="date" id="date" name="date" required="">-->
+          <label for="description">Description:</label>
+          <input type="text" id="description" name="description" required="">
+          
+      
+        </fieldset>
+        <button type="submit">Complaint Now</button>
+      </form>
+      
+    </body>
+</html>

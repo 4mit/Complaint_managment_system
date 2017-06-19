@@ -1,0 +1,47 @@
+<style type="text/css">
+fieldset {
+	width:500px;
+	border:5px dashed #CCCCCC;
+	margin:0 auto;
+	border-radius:5px;
+}
+ 
+legend {
+	color: blue;
+	font-size: 25px;
+}
+ 
+dl {
+	float: right;
+	width: 390px;
+}
+ 
+dt {
+	width: 180px;
+	color: brown;
+	font-size: 19px;
+}
+ 
+dd {
+	width:200px;
+	float:left;
+}
+ 
+dd input {
+	width: 200px;
+	border: 2px dashed #DDD;
+	font-size: 15px;
+	text-indent: 5px;
+	height: 28px;
+}
+ 
+.btn {
+	color: #fff;
+	background-color: dimgrey;
+	height: 38px;
+	border: 2px solid #CCC;
+	border-radius: 10px;
+	float: right;
+}
+ 
+</style>
